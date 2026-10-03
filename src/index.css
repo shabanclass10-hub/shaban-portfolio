@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #050505;
+}
+.eyebrow {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 28px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: #a78bfa;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+}
+#about {
+  position: relative;
+  z-index: 2;
+  width: min(1000px, 100%);
+  padding: 120px 20px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 24px;
+  color: #a78bfa;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+}
+
+#about h2,
+#projects h2 {
+  max-width: 850px;
+  margin: 0 0 30px;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -4px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 0 60px;
+  color: #a1a1aa;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  letter-spacing: 0 !important;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about-grid > div {
+  padding: 28px;
+  min-height: 190px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+  transition: 0.3s ease;
+}
+
+.about-grid > div:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.about-grid strong {
+  color: #a78bfa;
+  font-size: 0.8rem;
+}
+
+.about-grid h3 {
+  margin: 30px 0 12px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.about-grid p {
+  margin: 0;
+  color: #8f8f98;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  letter-spacing: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
